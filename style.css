@@ -1,0 +1,171 @@
+:root {
+    --bg: #020617;
+    --card-bg: #0f172a;
+    --neon-blue: #0ea5e9;
+    --neon-cyan: #22d3ee;
+    --text: #f8fafc;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Header & Promo */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background: rgba(2, 6, 23, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a {
+    text-decoration: none;
+    margin-left: 20px;
+    
+}
+.navbar li{
+    list-style: none;
+}
+
+
+.logo span { color: var(--neon-blue); text-shadow: 0 0 10px var(--neon-blue); }
+
+.promo-container {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
+}
+
+.promo-banner {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 15px var(--neon-blue);
+    text-align: center;
+    transition: opacity 0.5s ease;
+}
+
+/* Toggles */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.toggle-btn {
+    background: transparent;
+    border: 1px solid var(--neon-blue);
+    color: var(--neon-blue);
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.toggle-btn.active {
+    background: var(--neon-blue);
+    color: white;
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
+}
+
+/* Grids & Cards */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px 5%;
+}
+
+.product-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+}
+
+.detailed-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 5%;
+}
+
+.tech-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--card-bg);
+    border-radius: 25px;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+@media (max-width: 768px) {
+    .tech-card { grid-template-columns: 1fr; }
+}
+
+.model-3d-container {
+    width:100%;
+    height: 250px; /* Ajusta la altura a tu gusto */
+    overflow: hidden;
+    border-radius: 12px 12px 0 0; /* Bordes redondeados arriba */
+    background-color: #f0f0f0; /* Color de fondo mientras carga */
+}
+/* El iframe debe llenar el contenedor */
+.sketchfab-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Ajuste opcional para la tarjeta */
+.tech-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.wa-btn {
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.content-view { display: none; }
+.content-view.active { display: block; }
+
+/* Footer */
+.site-footer {
+    padding: 50px 5%;
+    background: #010409;
+    border-top: 1px solid var(--neon-blue);
+}
+
+#comment-form { display: flex; flex-direction: column; gap: 10px; max-width: 600px; }
+#comment-form input, #comment-form textarea {
+    background: #0f172a; border: 1px solid #334155; color: white; padding: 10px; border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  height: 100px;           /* Dale una altura si necesitas el centro vertical */
+}
