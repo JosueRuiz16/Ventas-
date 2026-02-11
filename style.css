@@ -167,17 +167,38 @@ footer {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center;     /* Centra verticalmente */
-  height: 100px;           /* Dale una altura si necesitas el centro vertical */
+  height: 220px;           /* Dale una altura si necesitas el centro vertical */
 }
-.credi{
-    color: #0ea5e9;
-    padding: 10px;
+.site-footer {
+    /* 1. OBLIGATORIO: Define el área de juego para el hijo */
+    position: relative; 
+    
+    /* 2. Asegura que el footer tenga espacio interno */
+    padding: 20px;
+    padding-bottom: 50px; /* Espacio extra para que el crédito no tape el formulario en móvil */
+    
+    width: 100%;
+    box-sizing: border-box;
+}
 
-  /* 2. El hijo se posiciona de forma absoluta respecto al padre */
-  position: relative; 
-  bottom: 0;   /* Pegado al borde inferior */
-  left: 20%;    /* Pegado al borde derecho */
-    font-size: clamp(1rem, 2.9vw, 1rem);
-    white-space: nowrap;
+.credi {
+    /* 3. Posicionamiento absoluto */
+    position: absolute;
+    bottom: 10px;  /* 10px desde el borde inferior del footer */
+    right: 20px;   /* 20px desde el borde derecho del footer */
+}
 
+.credi p {
+    margin: 0;
+    /* 4. Letra que se ajusta sola */
+    font-size: clamp(10px, 2vw, 14px); 
+    color: #666;
+    font-weight: bold;
+}
+
+/* Ajuste para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .credi {
+        right: 10px; /* Un poco más pegado al borde en móviles */
+    }
 }
