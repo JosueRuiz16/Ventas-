@@ -169,3 +169,15 @@ footer {
   align-items: center;     /* Centra verticalmente */
   height: 100px;           /* Dale una altura si necesitas el centro vertical */
 }
+.credi{
+    color: #0ea5e9;
+    padding: 10px;
+
+  /* 2. El hijo se posiciona de forma absoluta respecto al padre */
+  position: relative; 
+  bottom: 0;   /* Pegado al borde inferior */
+  left: 20%;    /* Pegado al borde derecho */
+    font-size: clamp(1rem, 2.9vw, 1rem);
+    white-space: nowrap;
+
+}

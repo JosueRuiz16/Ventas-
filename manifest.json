@@ -1,0 +1,24 @@
+{
+  "short_name": "Tecno Joss",
+  "name": "Mi Tienda Online",
+  "description": "La mejor selección de productos nuevos",
+  "icons": [
+    {
+      "src": "img/joss.png",
+      "type": "image/png",
+      "sizes": "225x225",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/joss512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "https://josueruiz16.github.io/Ventas-/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "portrait"
+}

@@ -44,3 +44,7 @@ document.getElementById('comment-form').addEventListener('submit', function(e) {
     display.prepend(newMsg);
     this.reset();
 });
+notificacion 
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+}
