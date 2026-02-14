@@ -4,19 +4,19 @@
   "description": "La mejor selección de productos nuevos",
   "icons": [
     {
-      "src": "img/joss.png",
+      "src": "img/joss192.png",
       "type": "image/png",
-      "sizes": "225x225",
+      "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "img/joss512.png",
+      "src": "img/ joss512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
     }
   ],
-  "start_url": "https://josueruiz16.github.io/Ventas-/",
+  "start_url": "index.html",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
