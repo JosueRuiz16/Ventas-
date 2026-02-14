@@ -46,5 +46,5 @@ document.getElementById('comment-form').addEventListener('submit', function(e) {
 });
 notificacion 
     if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js');
+    navigator.serviceWorker.register('./sw.js');XMLDocument
 }

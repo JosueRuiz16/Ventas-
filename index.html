@@ -6,9 +6,21 @@
     <title>Tecno JOSS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="sw.js">
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- notificacion -->
+     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "8bd18363-5377-4dfa-8686-20eb39ef6e28",
+    });
+  });
+</script>
+
 </head>
 <body>
 
@@ -64,7 +76,7 @@ certificados </h3>
 de ruido, certificación de Apple y
 conexion automática con 1 mes 
 de garantía</p>
-                    <span class="price">1000 C$</span>
+                    <span class="price">1200 C$</span>
                     <a href="https://wa.me/50587648048?text=Hola, quiero los AirPods 4" class="wa-btn"><i class="fab fa-whatsapp"></i> Comprar</a>
                 </div>
                 <div class="product-card empty-slot"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEROnXFr0QGlUpmJG9BP1kZA2tH5jNNDTvog&s" style="width: 100%;" alt="con pantalla"><h3>AirPods Pro 2 con pantalla
@@ -74,7 +86,7 @@ AAA </h3>  <p> Apple Watch serie ultra 2 , misma calidad
 del original , certicacion de Apple 
 monitorea el cuerpo
 24/7, resistente al agua y polvo 
-con 2 meses de garantía</p>
+con 1 meses de garantía</p>
                     <span class="price">1200 C$</span><a href="https://wa.me/50587648048?text=Hola, quiero informacion del Apple Watch Ultra 2" class="wa-btn"><i class="fab fa-whatsapp"></i> Comprar</a></div>
                 <div class="product-card empty-slot"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV_ZEt0Icu7q7uZDn7jvdj_O8YTpaYpDacEA&s" style="width: 100%;" alt="bateria"><h3>Power bank 10,000mah 
 borofone 100% original  </h3><p>Próximamente</p></div>
@@ -152,7 +164,6 @@ Carga: Estuche con carga inalámbrica MagSafe y carga por puerto Lightning o USB
 
     <script src="script.js"></script>
     
+    
 </body>
 </html>
-
-
