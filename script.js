@@ -1,7 +1,7 @@
 // Frases del banner central
 const phrases = [
     "TECNOLOGÍA ÉLITE",
-    "AIRPODS PRO 2",
+    "ACCESORIOS DE CALIDAD",
     "CARGADORES 100% ORIGINALES",
     "ENTREGAS RAPIDAS Y GARANTÍA"
 ];
@@ -46,5 +46,5 @@ document.getElementById('comment-form').addEventListener('submit', function(e) {
 });
 notificacion 
     if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js');XMLDocument
+    navigator.serviceWorker.register('sw.js');XMLDocument
 }
