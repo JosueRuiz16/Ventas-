@@ -1,5 +1,6 @@
 // Frases del banner central
 const phrases = [
+    "PROMOCIONES DE VERENO 2026 ⛱️🌤️",
     "TECNOLOGÍA ÉLITE",
     "ACCESORIOS DE CALIDAD",
     "CARGADORES 100% ORIGINALES",
